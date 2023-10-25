@@ -14,7 +14,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 // Create a express instance serving all methods on `/graphql`
 // where the GraphQL over HTTP express request handler is
 const app = express();
-app.all('/graphql', createHandler({ schema }));
+app.all('/graphql', createHandler({ schema:schema, graphiql: process.env.NODE_ENV === 'development'}));
 
 
 
