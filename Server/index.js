@@ -18,4 +18,4 @@ app.all('/graphql', createHandler({ schema }));
 
 
 
-app.listen(port, console.log(`Server running on port ${port} in ${nodeEnv} mode `));
+app.listen(port, console.log(`Server running on port ${port} in ${nodeEnv} mode`));
